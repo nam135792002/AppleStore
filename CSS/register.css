@@ -1,0 +1,144 @@
+.form-register{
+    height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.container-register{
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.container-register .title-register{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.container-register .title-register::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container-register form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .input-box span{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.checked-input{
+    margin: 10px;
+}
+
+.checked-input label{
+    font-size: 14px;
+}
+
+.register-other .auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-other .auth p{
+    margin: 10px;
+    font-size: 17px;
+}
+
+.login-zalo-gg{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login-zalo-gg img{
+    width: 50px;
+}
+
+.zalo{
+    margin-right: 20px;
+}
+
+.google img{
+    width: 60px;
+}
+
+form .button{
+     height: 45px;
+     margin: 35px 0
+}
+
+form .button input{
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: #e0052b;
+}
+
+.signup{
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.signup a{
+    color: #3498db;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.signup a:hover{
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+}
