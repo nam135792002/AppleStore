@@ -454,3 +454,236 @@ xác định các quy tắc CSS nào sẽ áp dụng cho các điều kiện tru
         font-size: 1.9rem;
     }
 }
+
+#product-deal-sales{
+    position: relative;
+    padding: 20px;
+    background: #ff685f;
+    border-radius: 12px;
+    height: 450px;
+    margin: 0 60px 30px 60px;
+}
+
+.product-sale-title-left{
+    display: flex;
+}
+
+.product-sale-title-left img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.product-sale-title-left-content h3{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    color: #ffe818;
+    margin-bottom: 5px;
+}
+
+.product-sale-title-left-content span{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.product-sale-title-middle h4{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #fff;
+}
+
+.product-sale-title-middle span{
+    font-size: 23px;
+    color: #fff;
+}
+
+.product-sale-title{
+    display: flex;
+    text-align: center;
+}
+
+.hr-bottom{
+    content: "";
+    bottom: -6px;
+    height: 4px;
+    border-radius: 100px;
+    width: 40px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: 5px auto;
+}
+
+.product-sale-title-right{
+    float: left;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.product-sale-title-middle{
+    flex: 1;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 16px;
+    position: relative;
+}
+
+.product-deal-sales-content-nam{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.product-deal-sales-content-nam-a{
+    width: 100%;
+}
+
+.product-deal-sales-content-nam-a a{
+    border: 0;
+    float: left;
+    max-width: calc(100% - 10px);
+    padding: 20px 5px 10px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.product-deal-sales-content-nam-a a img{
+    height: 170px;
+    line-height: 220px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.product-deal-sales-content-nam-a a img:hover{
+    transform: translate(0, -5px);
+}
+
+.product-deal-sales-content-nam-a a h3{
+    color: #288ad6;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 21px;
+}
+
+.product-deal-sales-content-nam-a a strong{
+    text-align: center;
+    color: #d0021c;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.product-deal-sales-content-nam-a-old-price{
+    position: relative;
+    display: flex;
+    overflow: visible;
+    margin: 15px 0 0;
+    min-height: 20px;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.product-deal-sales-content-nam-a-old-price del span{
+    color: #a4a4a4;
+    margin: 0 7px 0 0;
+    text-decoration-line: line-through;
+    line-height: 17px;
+}
+
+.product-deal-sales-content-nam-a-old-price p{
+    padding: 3px;
+    margin-left: 0;
+    vertical-align: text-top;
+    color: #eb5757;
+    background: #fff0e9;
+    border-radius: 4px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.fs-contain{
+    position: relative;
+    display: block;
+    overflow: visible;
+    margin: 15px 0 0;
+    min-height: 20px;
+}
+
+.fs-contain img{
+    position: absolute;
+    left: 0;
+    top: -7px;
+    width: 21px;
+    height: 28px !important;
+    z-index: 1;
+    display: block;
+    max-width: 100%;
+    
+}
+
+.fs-contain span{
+    position: relative;
+    display: block;
+    min-height: 20px;
+    padding-left: 21px;
+    background-color: #ddd;
+    border-radius: 25px;
+    line-height: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    color: #000;
+    overflow: hidden;
+}
+
+.fs-contain span i{
+    background: linear-gradient(64.85deg,#fcb500 23.67%,#ffd41d 106.12%);
+    min-width: 15px;
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fs-contain span b{
+    display: block;
+    position: relative;
+    z-index: 1;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+}
+
+#discount-payonl{
+    margin: 30px 60px 0 60px;
+    text-align: center;
+}
+
+#discount-payonl img{
+    border-radius: 12px;
+}
+
+.shopping-trend{
+    background: linear-gradient(90deg,#ffecd2 0%,#fcb69f 100%);
+    margin: 30px 60px 0 60px;
+    padding: 20px;
+    border-radius: 15px;
+}
