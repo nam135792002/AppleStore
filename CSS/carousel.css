@@ -1,0 +1,97 @@
+.container-carousel{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.main-carousel{
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.list-image{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-image div{
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.list-image img, .main-carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adjust the shadow as needed */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.control{
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    font-weight: 300;
+    color: #333;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+.active{
+    background: rgb(187, 67, 67);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Adjust the inset shadow as needed */
+}
+
+.list-image div.active img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adjust the shadow for the active image */
+}
+
+.img-feature{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.content-carousel{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.content-carousel span{
+    font-size: 20px;
+    color: rgb(155, 46, 46);
+    font-weight: 500;
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

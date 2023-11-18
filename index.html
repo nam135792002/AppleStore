@@ -11,6 +11,7 @@ minimum-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./CSS/category.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/carousel.css">
 </head>
 <body>
     <header>
@@ -62,6 +63,9 @@ minimum-scale=1.0">
                         <a href="./NOIDUNG/login.html" class="nav-link">Đăng Nhập</a> 
                     </li>
                     <li class="nav-item">
+                        <a href="./NOIDUNG/fillter_product.html" class="nav-link">Fillter</a> 
+                    </li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link nav-link-search"></a> 
                     </li>
                     <li class="nav-item nav-item-hidden">
@@ -74,17 +78,36 @@ minimum-scale=1.0">
     </header>
 
     <!-- Phần hình ảnh quảng cáo iPhone 11 Pro -->
-    <section class="hero iphone-11-pro">
-        <div class="container">
-            <div class="title">
-                <h2 class="title-heading">iPhone 11 Pro</h2>
-                <h3 class="title-sub-heading">Pro cameras. Pro display. Pro performance.</h3>
-                <p class="title-price">From $24.95/mo. or $599 with trade-in.*</p>
-            </div>
-            <div class="cta">
-                <a href="" class="cta-link">Learn more</a>
-                <a href="" class="cta-link">Buy</a>
-            </div>
+    <section class="container-carousel">
+        <div class="main-carousel">
+            <img src="./images/banner/banner1.png" class="img-feature" alt="">
+            <div class="control prev"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="control next"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="list-image">
+            <div><img src="./images/banner/banner1.png" alt=""></div>
+            <div><img src="./images/banner/banner2.jpg" alt=""></div>
+            <div><img src="./images/banner/banner3.jpg" alt=""></div>
+            <div><img src="./images/banner/banner4.png" alt=""></div>
+            <div><img src="./images/banner/banner5.jpg" alt=""></div>
+            <div><img src="./images/banner/banner6.jpg" alt=""></div>
+            <div><img src="./images/banner/banner7.jpg" alt=""></div>
+            <div><img src="./images/banner/banner8.jpg" alt=""></div>
+            <div><img src="./images/banner/banner9.jpg" alt=""></div>
+            <div><img src="./images/banner/banner10.jpg" alt=""></div>
+            <div><img src="./images/banner/banner11.png" alt=""></div>
+            <div><img src="./images/banner/banner12.png" alt=""></div>
+            <div><img src="./images/banner/banner13.jpg" alt=""></div>
+            <div><img src="./images/banner/banner14.jpg" alt=""></div>
+            <div><img src="./images/banner/banner15.jpg" alt=""></div>
+            <div><img src="./images/banner/banner16.jpg" alt=""></div>
+            <div><img src="./images/banner/banner17.png" alt=""></div>
+            <div><img src="./images/banner/banner18.jpg" alt=""></div>
+            <div><img src="./images/banner/banner19.jpeg" alt=""></div>
+            <div><img src="./images/banner/banner20.jpg" alt=""></div>
+        </div>
+        <div class="content-carousel">
+            <span></span>
         </div>
     </section>
     <!-- Phần hình ảnh quảng cáo iPhone 11 Pro -->
@@ -273,7 +296,7 @@ minimum-scale=1.0">
                     <a href="./NOIDUNG/phuKienDetail.html">
                         <img src="./images/product/apple1.jpeg" alt="">
                         <h3>Bút cảm ứng Apple Pencil Gen 2.0 MK0C2</h3>
-                        <strong>2.310.000đ</strong>
+                        <strong>2.890.000đ</strong>
 
                         <div class="product-deal-sales-content-nam-a-old-price">
                             <del><span>2.890.000đ</span></del>
@@ -420,5 +443,6 @@ minimum-scale=1.0">
     </footer>
 <!-- liên kết file JavaScript -->
 <script src="main.js"></script>
+<script src="./js/carousel.js"></script>
 </body>
 </html>

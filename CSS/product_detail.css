@@ -683,3 +683,119 @@
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+.arrow{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.main-img-group{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative; 
+    text-align: center;
+}
+
+.main-img-group-content{
+    display: inline-block; 
+    position: relative;
+}
+
+.main-img-group-content p{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d70018;
+}
+
+.circle-button {
+    border-radius: 30%;
+    text-align: center;
+    background-color: #ebe5e5;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+}
+
+#slideLeft{
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%); 
+    display: none;
+}
+
+#slideRight{
+    position: absolute; 
+    top: 50%; 
+    right: 0; 
+    transform: translateY(-50%); 
+    display: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }

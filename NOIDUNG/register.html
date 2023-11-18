@@ -78,38 +78,94 @@ minimum-scale=1.0">
         <div class="container-register">
             <div class="title-register">Đăng Ký</div>
             <div class="content">
-                <form action="#">
+                <form id="registrationForm" action="#" method="post" onsubmit="return validateForm();">
                     <div class="user-details">
                         <div class="input-box">
                             <span class="details">Họ Tên</span>
-                            <input type="text" placeholder="Nhập họ tên" required>
+                            <input type="text" placeholder="Nhập họ tên" id="fullName">
+                            <div class="error-message"></div>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Email</span>
-                            <input type="email" placeholder="Nhập email" required>
+                            <input type="text" placeholder="Nhập email" id="email">
+                            <div class="error-message"></div>
                         </div>
 
                         <div class="input-box">
-                            <span class="details">Số điện thoại</span>
-                            <input type="text" placeholder="Nhập số điện thoại">
+                            <span class="details">Quốc tịch</span>
+                            <select id="country" name="name-country">
+                                <option value="0" disabled selected>Lựa chọn</option>
+                                <option value="vn">Việt Nam</option>
+                                <option value="cn">Trung Quốc</option>
+                                <option value="us">Hoa Kỳ</option>
+                                <option value="jav">Nhật Bản</option>
+                              </select>
+                              <div class="error-message"></div>
                         </div>
 
                         <div class="input-box">
-                            <span class="details">Mã giới thiêu</span>
-                            <input type="text" placeholder="Nhập mã giới thiệu (nếu có)">
+                            <span class="details">Giới tính</span>
+                            <div class="radio-gender">
+                                <label class="container-radio">
+                                    <input type="radio" name="gender"> Nam
+                                </label>
+                                <label class="container-radio">
+                                    <input type="radio" name="gender"> Nữ
+                                </label>
+                            </div>
+                            <div class="error-radio"></div>
+                        </div>       
+                        
+                        <div class="check-box">
+                            <span class="details">Sở thích</span>
+                            <div class="checkboxes">
+                                <label class="container-checkbox">
+                                    <input type="checkbox" class="checkbox_hobby" name="hobby1"> Đọc sách
+                                </label>
+                                <label class="container-checkbox">
+                                    <input type="checkbox" class="checkbox_hobby" name="hobby2"> Du lịch
+                                </label>
+                                <label class="container-checkbox">
+                                    <input type="checkbox" class="checkbox_hobby" name="hobby3"> Âm nhạc
+                                </label>
+                                <label class="container-checkbox">
+                                    <input type="checkbox" class="checkbox_hobby" name="hobby4"> Ẩm thực
+                                </label>
+                                <label class="container-checkbox">
+                                    <input type="checkbox" class="checkbox_hobby" name="hobby5"> Khác
+                                </label>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>           
+
+                        <div class="input-box">
+                            <div class="header-showpassword">
+                                <span class="details">Mật khẩu</span>
+                                <input class="show-password" type="checkbox" onclick="myFunction()">
+                                <span class="header-showpassword-content">Hiện mật khẩu</span>
+                            </div>
+                            <input type="password" placeholder="Nhập mật khẩu" id="password">
+                            <div class="error-message"></div>
                         </div>
 
                         <div class="input-box">
-                            <span class="details">Mật khẩu</span>
-                            <input type="text" placeholder="Nhập mật khẩu" required>
-                        </div>
+                            <div class="header-showpassword">
+                                <span class="details">Xác Nhận Mật khẩu</span>
+                                <input class="show-password" type="checkbox" onclick="myFunctionConfirm()">
+                                <span class="header-showpassword-content">Hiện mật khẩu</span>
+                            </div>
+                            <input type="password" placeholder="Xác nhận lại mật khẩu" id="confirmPassword">
+                            <div class="error-message"></div>
+                        </div>                                   
 
-                        <div class="input-box">
-                            <span class="details">Xác nhận mật khẩu</span>
-                            <input type="text" placeholder="Xác nhận lại mật khẩu" required>
+                        <div class="input-box textarea-special">
+                            <span class="details">Ghi chú</span>
+                            <textarea id="textarea-note"></textarea>
+                            <div class="error-message"></div>
                         </div>
                     </div>
+
 
                     <div class="checked-input">
                         <input type="checkbox" name="dieukhoan" value="dieukhoan" checked>
@@ -123,8 +179,10 @@ minimum-scale=1.0">
 
                     <div class="button">
                         <input type="submit" value="Đăng ký Ngay!">
+                        <button type="button" class="reset-button" onclick="resetForm()">Reset</button>
                     </div>
                 </form>
+                <div id="error-message" style="color: red;"></div>
             </div>
 
             <div class="register-other">
@@ -213,5 +271,6 @@ minimum-scale=1.0">
             <p>Bản quyền © 2023 Apple Inc</p>
         </div>
     </footer>
+    <script src="../register.js"></script>
 </body>
 </html>
